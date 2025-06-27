@@ -1854,7 +1854,7 @@ static int SelectGame(void)
 		strncpy(ncfg->GamePath, StartChar, sizeof(ncfg->GamePath));
 		ncfg->GamePath[sizeof(ncfg->GamePath)-1] = 0;
 		memcpy(&(ncfg->GameID), gi[SelectedGame].ID, 4);
-		ncfg->GameMakerCode = 0
+		ncfg->GameMakerCode = 0;
 		memcpy(&(ncfg->GameMakerCode), gi[SelectedGame].MakerCode, 2);
 		ncfg->GameRevision = gi[SelectedGame].Revision;
 		ncfg->GameDiscNumber = gi[SelectedGame].DiscNumber;
